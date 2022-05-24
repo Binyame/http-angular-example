@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-6 mx-auto mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h3>New User Registration</h3>
+                </div>
+
+                <div class="card-body center">
+                    <form #userForm="ngForm" (ngSubmit)="signUp(userForm)">
+
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                {{userinfo | json}}
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <input type="text" name="username" placeholder="Username" class="form-control" required [(ngModel)]="userinfo.username">
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <input type="password" name="password" placeholder="Password" class="form-control" required [(ngModel)]="userinfo.password">
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <input type="password" name="cofirm_password" placeholder="Confirm Password"
+                                    class="form-control" required [(ngModel)]="userinfo.confirmpwd">
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <input type="email" name="emailid" placeholder="Email Id" class="form-control" required [(ngModel)]="userinfo.emailid">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="row mt-2">
+                                <div class="col-md-12">
+                                    <input type="text" name="street" placeholder="Street" class="form-control" required [(ngModel)]="userinfo.address.street">
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-12">
+                                    <input type="text" name="cityname" placeholder="City" class="form-control" required [(ngModel)]="userinfo.address.city">
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-12">
+                                    <input type="text" name="pincode" placeholder="Pincode" class="form-control"
+                                        required [(ngModel)]="userinfo.address.pincode">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <input type="submit" value="Submit" class="btn btn-primary float-end">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

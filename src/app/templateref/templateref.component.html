@@ -1,0 +1,50 @@
+<h3 style="color:red;">Template Referencing</h3>
+<hr>
+
+<div class="row">
+    <div class="col-md-2">
+        <b>Example 1</b>
+    </div>
+
+    <div class="col-md-3">
+        <input type="text" #cityname class="form-control" placeholder="City Name">
+    </div>
+
+    <div class="col-md-3">
+        <button class="btn btn-primary" (click)="showCity(cityname)">Show City</button>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-2">
+        <b>Example 2</b>
+    </div>
+
+    <div class="col-md-3">
+        <input type="radio" (change)="selectGender($event)" value="Male" name="gender" id="rmale" class="form-check-input mx-2">
+        <label for="rmale" class="mx-2">Male</label>
+
+        <input type="radio"  (change)="selectGender($event)" value="Female" name="gender" id="rfemale" class="form-check-input mx-2">
+        <label for="rfemale" class="mx-2">Female</label>
+    </div>
+
+    <div class="col-md-3">
+        <button class="btn btn-primary my-3" (click)="showPerson(cityname)">Show Person</button>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-2">
+        <b>Example 3</b>
+    </div>
+
+    <div class="col-md-3">
+        <input type="email" [(ngModel)]="useremail" class="form-control" placeholder="Email Id">
+    </div>
+
+    <div class="col-md-3">
+        {{useremail}}
+    </div>
+</div>

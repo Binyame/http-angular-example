@@ -1,0 +1,65 @@
+<h3 style="color:red;">Property Binding Examples</h3>
+<hr>
+
+<div class="row my-3">
+    <div class="col-md-2">
+        <b>Example 1</b>
+    </div>
+
+    <div class="col-md-4">
+        <input type="text" value="Shrenik" class="form-control" />
+    </div>
+</div>
+
+
+<div class="row my-3">
+    <div class="col-md-2">
+        <b>Example 2</b>
+    </div>
+
+    <div class="col-md-4">
+        <input type="text" [id]="formelements.fname" class="form-control my-2" />
+        <input type="text" [id]="formelements.lname" class="form-control my-2">
+    </div>
+</div>
+
+<div class="row my-3">
+    <div class="col-md-2">
+        <b>Example 3</b>
+    </div>
+
+    <div class="col-md-4">
+        <input type="text" placeholder="Cityname" [disabled]="!enableCity" class="form-control" />
+    </div>
+</div>
+
+<div class="row my-3">
+    <div class="col-md-2">
+        <b>Example 4</b>
+    </div>
+
+    <div class="col-md-3">
+        <p [class]="pass">Student is Pass</p>
+    </div>
+
+    
+    <div class="col-md-3">
+        <p [class]="fail">Student is Fail</p>
+    </div>
+
+    <div class="col-md-3">
+        <p [class]="serverdown">Server is Down</p>
+        <p [class.text-danger]="!isconnected">Failed to connect Database Server</p>
+    </div>
+</div>
+
+
+<div class="row my-3">
+    <div class="col-md-2">
+        <b>Example 5</b>
+    </div>
+
+    <div class="col-md-4">
+      <p [ngClass]="myfavclasses">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia sint voluptate quia possimus qui tempore molestias quam similique, ad harum nihil. Eaque dolore, saepe esse illum temporibus fugit culpa.</p>
+    </div>
+</div>

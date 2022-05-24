@@ -1,0 +1,48 @@
+<div class="row my-2 mx-2">
+    <div class="col-md-4 mx-auto d-grid">
+        <input type="search" placeholder="Item" class="form-control" /> 
+    </div>
+
+    <div class="col-md-2 float-start">
+        <input type="button" value="New Author" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+    </div>
+</div>
+
+
+<div class="row my-1 mx-1 p-3">
+    <div class="col-md-6 mx-auto d-grid">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Author Id</th>
+                    <th>Author Name</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Author Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" placeholder="Author Id" class="form-control my-2" />
+          <input type="text" placeholder="Author Name" class="form-control my-2" />
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
